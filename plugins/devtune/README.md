@@ -15,7 +15,7 @@ This plugin configures the DevTune MCP endpoint:
 https://devtune.ai/api/mcp
 ```
 
-Authentication uses MCP OAuth. Sign in with DevTune when Codex prompts for authorization, then choose the project the MCP server should access.
+Authentication uses MCP OAuth. Sign in with DevTune when Codex prompts for authorization, then choose the project the MCP server should access. Do not manually request DevTune API key scopes during OAuth login; DevTune maps the selected project and your account permissions to MCP tool access.
 
 ## Usage
 
