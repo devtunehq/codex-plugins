@@ -24,7 +24,7 @@
     "longDescription": "Use DevTune MCP from Codex to inspect AI search visibility, competitive positioning, citations, actions, and related DevTune workspace data.",
     "developerName": "DevTune",
     "category": "Productivity",
-    "capabilities": ["Interactive", "Read"],
+    "capabilities": ["Interactive", "Read", "Write"],
     "websiteURL": "https://devtune.ai/",
     "privacyPolicyURL": "https://devtune.ai/privacy-policy",
     "termsOfServiceURL": "https://devtune.ai/terms-of-service",
