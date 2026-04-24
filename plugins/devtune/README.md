@@ -31,4 +31,4 @@ Example prompts:
 
 ## License
 
-This plugin is proprietary to DevTune. See the repository [LICENSE.md](../../LICENSE.md).
+This plugin is available under the MIT License. See the repository [LICENSE.md](../../LICENSE.md).

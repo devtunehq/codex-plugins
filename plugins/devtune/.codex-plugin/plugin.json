@@ -8,7 +8,7 @@
   },
   "homepage": "https://docs.devtune.ai/api-reference/mcp-server",
   "repository": "https://github.com/devtunehq/codex-plugins",
-  "license": "Proprietary",
+  "license": "MIT",
   "keywords": [
     "devtune",
     "mcp",
