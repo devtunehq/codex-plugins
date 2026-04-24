@@ -28,3 +28,7 @@ Example prompts:
 - Use DevTune to summarize my AI search visibility.
 - Find DevTune actions that need attention.
 - Compare my brand against competitors in DevTune.
+
+## License
+
+This plugin is proprietary to DevTune. See the repository [LICENSE.md](../../LICENSE.md).

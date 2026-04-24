@@ -21,3 +21,7 @@ OAuth connections use your signed-in DevTune account permissions. Read tools use
 API keys are only needed for non-interactive MCP clients or fallback setups that cannot complete OAuth. For Codex plugin installs, OAuth is the expected path.
 
 After authorizing DevTune, ask Codex to use DevTune for AI search visibility, competitive positioning, citations, actions, or workspace analysis.
+
+## License
+
+This repository and the DevTune Codex plugin are proprietary to DevTune. See [LICENSE.md](./LICENSE.md).
