@@ -24,4 +24,4 @@ After authorizing DevTune, ask Codex to use DevTune for AI search visibility, co
 
 ## License
 
-This repository and the DevTune Codex plugin are proprietary to DevTune. See [LICENSE.md](./LICENSE.md).
+This repository and the DevTune Codex plugin are available under the MIT License. See [LICENSE.md](./LICENSE.md).
