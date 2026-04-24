@@ -1,0 +1,41 @@
+{
+  "name": "devtune",
+  "version": "0.1.0",
+  "description": "Connect Codex to DevTune through the DevTune MCP server.",
+  "author": {
+    "name": "DevTune",
+    "url": "https://devtune.ai/"
+  },
+  "homepage": "https://docs.devtune.ai/api-reference/mcp-server",
+  "repository": "https://github.com/devtunehq/codex-plugins",
+  "license": "Proprietary",
+  "keywords": [
+    "devtune",
+    "mcp",
+    "ai-search",
+    "analytics",
+    "competitive-intelligence"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "DevTune",
+    "shortDescription": "Connect Codex to DevTune AI search intelligence.",
+    "longDescription": "Use DevTune MCP from Codex to inspect AI search visibility, competitive positioning, citations, actions, and related DevTune workspace data.",
+    "developerName": "DevTune",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read"],
+    "websiteURL": "https://devtune.ai/",
+    "privacyPolicyURL": "https://devtune.ai/privacy-policy",
+    "termsOfServiceURL": "https://devtune.ai/terms-of-service",
+    "defaultPrompt": [
+      "Use DevTune to summarize my AI search visibility.",
+      "Find DevTune actions that need attention.",
+      "Compare my brand against competitors in DevTune."
+    ],
+    "brandColor": "#151A2D",
+    "composerIcon": "./assets/devtune-mark.svg",
+    "logo": "./assets/devtune-logo.svg",
+    "screenshots": []
+  }
+}

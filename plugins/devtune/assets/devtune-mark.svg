@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">DevTune mark</title>
+  <desc id="desc">A dark rounded square with a stylized DevTune signal mark.</desc>
+  <rect width="128" height="128" rx="24" fill="#151A2D"/>
+  <path d="M31 79.5V48.5C31 43.253 35.253 39 40.5 39H59.5C76.345 39 90 52.655 90 69.5C90 86.345 76.345 100 59.5 100H40.5C35.253 100 31 95.747 31 90.5V79.5Z" fill="#FFFFFF"/>
+  <path d="M49 82V57H59.5C66.404 57 72 62.596 72 69.5C72 76.404 66.404 82 59.5 82H49Z" fill="#151A2D"/>
+  <path d="M82 39L97 39L77 90H62L82 39Z" fill="#4FD1C5"/>
+</svg>

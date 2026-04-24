@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="160" viewBox="0 0 512 160" role="img" aria-labelledby="title desc">
+  <title id="title">DevTune logo</title>
+  <desc id="desc">The DevTune wordmark with a stylized signal mark.</desc>
+  <rect width="512" height="160" rx="28" fill="#151A2D"/>
+  <g transform="translate(34 32)">
+    <rect width="96" height="96" rx="20" fill="#FFFFFF"/>
+    <path d="M26 62V34H46C62.016 34 75 46.984 75 63C75 79.016 62.016 92 46 92H31C28.239 92 26 89.761 26 87V62Z" fill="#151A2D"/>
+    <path d="M44 74V48H46C54.284 48 61 54.716 61 63C61 71.284 54.284 78 46 78H48C45.791 78 44 76.209 44 74Z" fill="#FFFFFF"/>
+    <path d="M71 24H86L65 77H50L71 24Z" fill="#4FD1C5"/>
+  </g>
+  <text x="156" y="99" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700">DevTune</text>
+  <circle cx="457" cy="52" r="8" fill="#4FD1C5"/>
+</svg>

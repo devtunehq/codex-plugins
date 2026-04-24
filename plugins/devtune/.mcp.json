@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "devtune": {
+      "type": "http",
+      "url": "https://app.devtune.ai/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${DEVTUNE_API_KEY}"
+      },
+      "note": "DevTune Streamable HTTP MCP server. Set DEVTUNE_API_KEY to a DevTune API key before connecting."
+    }
+  }
+}

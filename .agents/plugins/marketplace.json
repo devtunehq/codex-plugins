@@ -1,0 +1,20 @@
+{
+  "name": "devtune-plugins",
+  "interface": {
+    "displayName": "DevTune Plugins"
+  },
+  "plugins": [
+    {
+      "name": "devtune",
+      "source": {
+        "source": "local",
+        "path": "./plugins/devtune"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
