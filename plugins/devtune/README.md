@@ -21,7 +21,7 @@ Authentication uses MCP OAuth. Sign in with DevTune when Codex prompts for autho
 
 After installing the plugin and authorizing DevTune, ask Codex to use DevTune for AI search visibility, competitive positioning, citations, actions, or workspace analysis.
 
-The DevTune MCP server exposes read-only tools for visibility summaries, competitive position, citations, actions, action briefs, traffic, adoption metrics, and content gaps.
+The DevTune MCP server exposes tools for visibility summaries, competitive position, citations, actions, action briefs, traffic, adoption metrics, and content gaps. Most tools read project data; write-capable operations such as action brief generation require DevTune management permission for the selected account.
 
 Example prompts:
 
