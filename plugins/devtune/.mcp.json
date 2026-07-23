@@ -1,9 +1,7 @@
 {
-  "mcpServers": {
+  "mcp_servers": {
     "devtune": {
-      "type": "http",
-      "url": "https://devtune.ai/api/mcp",
-      "note": "DevTune Streamable HTTP MCP server. Use MCP OAuth to sign in and select a project."
+      "url": "https://devtune.ai/api/mcp"
     }
   }
 }
