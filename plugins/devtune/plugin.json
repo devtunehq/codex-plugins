@@ -1,0 +1,110 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "devtune",
+  "version": "1.0.0",
+  "description": "Measure, fix and prove what AI answer engines tell your buyers about your product, using your DevTune project data.",
+  "author": {
+    "name": "DevTune",
+    "url": "https://devtune.ai/"
+  },
+  "homepage": "https://docs.devtune.ai/api-reference/mcp-server",
+  "repository": "https://github.com/devtunehq/codex-plugins",
+  "license": "MIT",
+  "keywords": [
+    "devtune",
+    "ai-visibility",
+    "ai-search",
+    "citations",
+    "ai-traffic",
+    "answer-engine-optimization"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "DevTune",
+        "shortDescription": "See what AI says about you",
+        "longDescription": "DevTune shows what ChatGPT, Perplexity, Google AI Overviews, Google AI Mode and Microsoft Copilot tell buyers about your product, and helps you change it.\n\nConnect your DevTune project to:\n- Read Visibility: how often AI answers mention and cite you, share of voice against your competitors, and the AI responses behind each number.\n- Read AI Traffic: crawls, answer fetches and AI-referred visits to your site, and the missing pages AI systems keep requesting.\n- Work the Actions queue: ranked fixes with their evidence, briefs and content drafts.\n- Check Results: before-and-after measurement for every fix you shipped.\n- Run DevTune agents to investigate, audit, draft and report.\n\nFor growth, content, devrel and marketing teams that already use DevTune. You need a DevTune account with a project. The plugin reads and changes only the project you choose when you connect. Drafts are never published without your approval, and runs that spend DevTune credits ask first.",
+        "developerName": "DevTune",
+        "category": "Productivity",
+        "capabilities": [
+          "Read AI visibility and citations",
+          "Read AI Traffic",
+          "Manage actions and drafts",
+          "Read measured results",
+          "Run DevTune agents"
+        ],
+        "websiteURL": "https://devtune.ai/",
+        "supportURL": "https://devtune.ai/contact",
+        "privacyPolicyURL": "https://devtune.ai/privacy-policy",
+        "termsOfServiceURL": "https://devtune.ai/terms-of-service",
+        "defaultPrompt": [
+          "How visible is my product in AI answers this month?",
+          "Which competitors get cited instead of us, and where?",
+          "What should we fix first to improve our AI visibility?"
+        ],
+        "brandColor": "#10B981",
+        "brandColorDark": "#34D399",
+        "composerIcon": "./assets/icon.svg",
+        "composerIconDark": "./assets/icon-dark.svg",
+        "logo": "./assets/logo.png",
+        "logoDark": "./assets/logo-dark.png"
+      },
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Summarize AI visibility for the connected project",
+              "prompt": "How visible is my product in AI answers over the last 30 days?",
+              "tools_triggered": "devtune_get_visibility_summary, devtune_get_visibility_diff",
+              "expected_behavior": "Reports brand awareness, citation presence and share of voice for the last 30 days with their ranges, names the platforms measured, and states how each moved against the previous window."
+            },
+            {
+              "description": "Compare against competitors",
+              "prompt": "Which competitors get cited instead of us, and on which sites?",
+              "tools_triggered": "devtune_get_competitive_position, devtune_get_top_citation_domains",
+              "expected_behavior": "Lists the configured competitors by citation share and the domains AI platforms cite most, separating the primary brand's citations from competitor citations."
+            },
+            {
+              "description": "Prioritise fixes",
+              "prompt": "What should we fix first to improve our AI visibility?",
+              "tools_triggered": "devtune_get_actions, devtune_get_action_brief",
+              "expected_behavior": "Returns the top suggested and accepted actions in DevTune's ranked order with the evidence behind each, and offers to open the brief for one of them without changing any action."
+            },
+            {
+              "description": "Report AI Traffic",
+              "prompt": "How much AI crawler and answer-fetch traffic did our site get this month?",
+              "tools_triggered": "devtune_get_traffic_summary, devtune_get_traffic_platforms",
+              "expected_behavior": "Reports crawls, answer fetches and AI-referred visits separately by AI platform for the window, and says which days had no sensor coverage instead of counting them as zero."
+            },
+            {
+              "description": "Report measured results",
+              "prompt": "Did the fixes we shipped improve anything?",
+              "tools_triggered": "devtune_get_outcomes_ledger",
+              "expected_behavior": "Lists shipped actions with their result (improved, mixed, no clear change, declined, still measuring or unmeasured) and the before/after evidence, without claiming that a fix caused a change."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Data outside the connected project",
+              "prompt": "Show me the DevTune data for a competitor's account."
+            },
+            {
+              "description": "Publishing without approval",
+              "prompt": "Write a new landing page and publish it to our live website right now."
+            },
+            {
+              "description": "Unrelated request",
+              "prompt": "What's the weather in London tomorrow?"
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "DevTune does not sell anything through this plugin. Signed-in users use the features and credits already included in their DevTune plan."
+      },
+      "publication": {
+        "release_notes": "Covers all four DevTune areas (Visibility, AI Traffic, Actions and Results), managed agents and Dex, with a setup skill that confirms which project is connected."
+      }
+    }
+  }
+}

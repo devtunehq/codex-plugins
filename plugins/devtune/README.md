@@ -1,34 +1,44 @@
-# DevTune Codex Plugin
+# DevTune plugin for ChatGPT and Codex
 
-Connect Codex to DevTune through the DevTune MCP server.
+Connects ChatGPT and Codex to your DevTune project through the DevTune MCP
+server at `https://devtune.ai/api/mcp`.
 
 ## Requirements
 
-- A DevTune account.
-- A Codex version with MCP OAuth support.
+- A DevTune account with a project.
 
-## MCP Server
+## Connect
 
-This plugin configures the DevTune MCP endpoint:
+Install the plugin, then sign in to DevTune when prompted and choose the
+project this connection should use. The connection can do what your DevTune
+role allows in that project. To switch projects, reconnect and choose another.
 
-```text
-https://devtune.ai/api/mcp
-```
+## What it covers
 
-Authentication uses MCP OAuth. Sign in with DevTune when Codex prompts for authorization, then choose the project the MCP server should access. Do not manually request DevTune API key scopes during OAuth login; DevTune maps the selected project and your account permissions to MCP tool access.
+- **Visibility:** brand awareness, citation presence and share of voice, the AI
+  responses behind them, competitors, cited sites and content gaps.
+- **AI Traffic:** crawls, answer fetches and AI-referred visits, plus 404
+  demand.
+- **Actions:** the ranked fix queue, briefs, drafts and the site Audit.
+- **Results:** before/after measurement for shipped actions.
+- **Agents:** managed agents and Dex.
 
-## Usage
+Tools that change project data or spend DevTune credits ask for your approval
+first. DevTune never publishes content for you.
 
-After installing the plugin and authorizing DevTune, ask Codex to use DevTune for AI search visibility, competitive positioning, citations, actions, or workspace analysis.
+## Package layout
 
-The DevTune MCP server exposes tools for visibility summaries, competitive position, citations, actions, action briefs, traffic, adoption metrics, and content gaps. Most tools read project data; write-capable operations such as action brief generation require DevTune management permission for the selected account.
+- `plugin.json`: plugin identity and the ChatGPT/Codex listing.
+- `mcp.json`: the DevTune MCP server and its OAuth settings.
+- `skills/get-started`: the setup skill that runs after install.
+- `skills/devtune`: how to use the DevTune tools and report their numbers.
 
-Example prompts:
+## Example prompts
 
-- Use DevTune to summarize my AI search visibility.
-- Find DevTune actions that need attention.
-- Compare my brand against competitors in DevTune.
+- How visible is my product in AI answers this month?
+- Which competitors get cited instead of us, and where?
+- What should we fix first to improve our AI visibility?
 
 ## License
 
-This plugin is available under the MIT License. See the repository [LICENSE.md](../../LICENSE.md).
+MIT. See [LICENSE.md](../../LICENSE.md).
