@@ -11,8 +11,8 @@ Confirm what the connection can reach, then show the user one useful number.
    its domains. If `paused` is true, say the project is paused, so DevTune can
    only read its data until someone resumes it in the DevTune app.
 2. Read `scopes` and `features` and tell the user, in plain words, what this
-   connection can do: read data only, or also manage prompts, actions and
-   agents. Don't list raw scope strings unless the user asks.
+   connection can do: read data only, or also manage prompts and
+   actions. Don't list raw scope strings unless the user asks.
 3. Call `devtune_get_visibility_summary` for the last 30 days. Report brand
    awareness, citation presence and share of voice, and name the platforms in
    `measurement.reportablePlatforms`. If a value is null or a platform has no
