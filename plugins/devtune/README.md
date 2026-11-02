@@ -21,7 +21,6 @@ role allows in that project. To switch projects, reconnect and choose another.
   demand.
 - **Actions:** the ranked fix queue, briefs, drafts and the site Audit.
 - **Results:** before/after measurement for shipped actions.
-- **Agents:** managed agents and Dex.
 
 Tools that change project data or spend DevTune credits ask for your approval
 first. DevTune never publishes content for you.

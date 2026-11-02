@@ -1,6 +1,6 @@
 ---
 name: devtune
-description: Use when the user asks what AI platforms say about their product, how visible or cited they are in AI answers, which competitors get cited, AI crawler or AI referral traffic, what to fix next, whether shipped fixes worked, or to run a DevTune agent.
+description: Use when the user asks what AI platforms say about their product, how visible or cited they are in AI answers, which competitors get cited, AI crawler or AI referral traffic, what to fix next, or whether shipped fixes worked.
 ---
 
 # DevTune
@@ -24,7 +24,6 @@ results, not from general knowledge.
 | What to fix next | `devtune_get_actions`, then `devtune_get_action_brief` |
 | Site readiness for AI (crawlability, `llms.txt`) | `devtune_get_audit_summary`, `devtune_get_audit_findings` |
 | Whether shipped fixes worked | `devtune_get_outcomes_ledger` |
-| Running an agent or talking to Dex | `devtune_list_agents`, then `devtune_run_agent` or `devtune_start_dex_conversation` |
 
 If a tool returns an error about a missing scope or feature, call
 `devtune_get_connection_context` and tell the user what the connection lacks.
@@ -51,10 +50,10 @@ If a tool returns an error about a missing scope or feature, call
 
 - Read tools are safe to call without asking.
 - Before creating, updating, archiving or deleting anything (prompts, topics,
-  brands, actions, agents, webhooks), say what will change and wait for the
+  brands, actions, webhooks), say what will change and wait for the
   user to confirm.
-- Before any tool that spends DevTune credits (agent runs, Dex, drafts, Agent
-  Picks tests, prompt set analysis), say so and get approval first. When a
+- Before any tool that spends DevTune credits (drafts, Agent Picks tests,
+  prompt set analysis), say so and get approval first. When a
   tool asks for an approved credit estimate, use only the figure the user
   approved.
 - DevTune drafts content. It never publishes it. A draft pull request is

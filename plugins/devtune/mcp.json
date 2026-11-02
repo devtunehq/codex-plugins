@@ -3,7 +3,7 @@
   "mcpServers": {
     "devtune": {
       "type": "streamable-http",
-      "url": "https://devtune.ai/api/mcp",
+      "url": "https://devtune.ai/api/mcp?toolset=plugin",
       "extensions": {
         "com.openai": {
           "auth": {
