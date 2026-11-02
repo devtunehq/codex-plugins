@@ -23,9 +23,9 @@
       "interface": {
         "displayName": "DevTune",
         "shortDescription": "See what AI says about you",
-        "longDescription": "DevTune shows what ChatGPT, Perplexity, Google AI Overviews, Google AI Mode and Microsoft Copilot tell buyers about your product, and helps you change it.\n\nConnect your DevTune project to:\n- Read Visibility: how often AI answers mention and cite you, share of voice against your competitors, and the AI responses behind each number.\n- Read AI Traffic: crawls, answer fetches and AI-referred visits to your site, and the missing pages AI systems keep requesting.\n- Work the Actions queue: ranked fixes with their evidence, briefs and content drafts.\n- Check Results: before-and-after measurement for every fix you shipped.\n- Run DevTune agents to investigate, audit, draft and report.\n\nFor growth, content, devrel and marketing teams that already use DevTune. You need a DevTune account with a project. The plugin reads and changes only the project you choose when you connect. Drafts are never published without your approval, and runs that spend DevTune credits ask first.",
+        "longDescription": "DevTune shows what AI answer engines tell buyers about your product, and helps you change it.\n\nConnect your DevTune project to:\n- Read Visibility: how often AI answers mention and cite you, share of voice against your competitors, and the AI responses behind each number.\n- Read AI Traffic: crawls, answer fetches and AI-referred visits to your site, and the missing pages AI systems keep requesting.\n- Work the Actions queue: ranked fixes with their evidence, briefs and content drafts.\n- Check Results: before-and-after measurement for every fix you shipped.\n- Run DevTune agents to investigate, audit, draft and report.\n\nFor growth, content, devrel and marketing teams that already use DevTune. You need a DevTune account with a project. The plugin reads and changes only the project you choose when you connect. Drafts are never published without your approval, and runs that spend DevTune credits ask first.",
         "developerName": "DevTune",
-        "category": "Productivity",
+        "category": "Data & Analytics",
         "capabilities": [
           "Read AI visibility and citations",
           "Read AI Traffic",
