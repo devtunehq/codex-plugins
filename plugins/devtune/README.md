@@ -22,8 +22,9 @@ role allows in that project. To switch projects, reconnect and choose another.
 - **Actions:** the ranked fix queue, briefs, drafts and the site Audit.
 - **Results:** before/after measurement for shipped actions.
 
-Tools that change project data or spend DevTune credits ask for your approval
-first. DevTune never publishes content for you.
+Tools that change project data ask for your approval first. Briefs, content
+drafts and Agent Picks tests are started in the DevTune app, not from the
+plugin. DevTune never publishes content for you.
 
 ## Package layout
 
