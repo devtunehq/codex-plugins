@@ -23,6 +23,16 @@ The plugin directory takes the plugin folder as a ZIP:
 cd plugins/devtune && zip -r ../../devtune-plugin.zip . -x '.*'
 ```
 
+## Check that Codex loads it
+
+CI installs the plugin into an empty Codex home and fails unless Codex loads
+the DevTune MCP server. Run the same check locally with `codex` and `jq`
+installed:
+
+```bash
+scripts/check-codex-loads.sh
+```
+
 ## License
 
 MIT. See [LICENSE.md](./LICENSE.md).
