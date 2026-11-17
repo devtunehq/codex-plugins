@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "devtune",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Measure, fix and prove what AI answer engines tell your buyers about your product, using your DevTune project data.",
   "author": {
     "name": "DevTune",
