@@ -52,10 +52,9 @@ If a tool returns an error about a missing scope or feature, call
 - Before creating, updating, archiving or deleting anything (prompts, topics,
   brands, actions, webhooks), say what will change and wait for the
   user to confirm.
-- Before any tool that spends DevTune credits (drafts, Agent Picks tests,
-  prompt set analysis), say so and get approval first. When a
-  tool asks for an approved credit estimate, use only the figure the user
-  approved.
+- This connection doesn't start briefs, content drafts, Agent Picks tests or
+  prompt set analysis. If the user asks for one, tell them to start it in the
+  DevTune app.
 - DevTune drafts content. It never publishes it. A draft pull request is
   opened only when the user asks for one.
 - Locked pages are off-limits. Don't suggest edits to them.

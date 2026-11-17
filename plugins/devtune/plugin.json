@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "devtune",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Measure, fix and prove what AI answer engines tell your buyers about your product, using your DevTune project data.",
   "author": {
     "name": "DevTune",
@@ -23,13 +23,13 @@
       "interface": {
         "displayName": "DevTune",
         "shortDescription": "See what AI says about you",
-        "longDescription": "DevTune shows what AI answer engines tell buyers about your product, and helps you change it.\n\nConnect your DevTune project to:\n- Read Visibility: how often AI answers mention and cite you, share of voice against your competitors, and the AI responses behind each number.\n- Read AI Traffic: crawls, answer fetches and AI-referred visits to your site, and the missing pages AI systems keep requesting.\n- Work the Actions queue: ranked fixes with their evidence, briefs and content drafts.\n- Check Results: before-and-after measurement for every fix you shipped.\n\nFor growth, content, devrel and marketing teams that already use DevTune. You need a DevTune account with a project. The plugin reads and changes only the project you choose when you connect. Drafts are never published without your approval, and anything that spends DevTune credits asks first.",
+        "longDescription": "DevTune shows what AI answer engines tell buyers about your product, and helps you change it.\n\nConnect your DevTune project to:\n- Read Visibility: how often AI answers mention and cite you, share of voice against your competitors, and the AI responses behind each number.\n- Read AI Traffic: crawls, answer fetches and AI-referred visits to your site, and the missing pages AI systems keep requesting.\n- Work the Actions queue: ranked fixes with their evidence, and the briefs and content drafts made for them in DevTune.\n- Check Results: before-and-after measurement for every fix you shipped.\n\nFor growth, content, devrel and marketing teams that already use DevTune. You need a DevTune account with a project. The plugin reads and changes only the project you choose when you connect. Changes ask for your approval first, and the plugin never publishes content.",
         "developerName": "DevTune",
         "category": "Data & Analytics",
         "capabilities": [
           "Read AI visibility and citations",
           "Read AI Traffic",
-          "Manage actions and drafts",
+          "Manage the Actions queue",
           "Read measured results"
         ],
         "websiteURL": "https://devtune.ai/",
@@ -99,10 +99,10 @@
           ]
         },
         "commerce": false,
-        "commerce_description": "DevTune does not sell anything through this plugin. Signed-in users use the features and credits already included in their DevTune plan."
+        "commerce_description": "Nothing is sold, priced or bought through this plugin, and it starts no paid work. It reads and edits the project the user already has in DevTune. Briefs, content drafts and Agent Picks tests are started only in the DevTune app."
       },
       "publication": {
-        "release_notes": "Covers all four DevTune areas (Visibility, AI Traffic, Actions and Results), with a setup skill that confirms which project is connected."
+        "release_notes": "Covers all four DevTune areas (Visibility, AI Traffic, Actions and Results), with a setup skill that confirms which project is connected. This version starts no paid work: briefs, content drafts and Agent Picks tests are started in the DevTune app."
       }
     }
   }
