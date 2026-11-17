@@ -1,0 +1,25 @@
+name: Codex loads the plugin
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    # Weekly against the latest Codex, which can stop reading a file we haven't changed.
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  codex-loads-mcp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install -g @openai/codex@latest
+      - run: bash scripts/check-codex-loads.sh
